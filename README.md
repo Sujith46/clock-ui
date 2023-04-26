@@ -10,3 +10,7 @@ This project is initialized using vitejs.
 4. npm run dev
 
 ## Live preview link https://clock-ui-cyan.vercel.app/
+
+
+https://user-images.githubusercontent.com/37608689/234510143-020d26aa-8249-4786-822e-1f8a438be1d9.mov
+
