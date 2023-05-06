@@ -1,6 +1,12 @@
-import "./AnalogClock.css";
+import "./AnalogClock.scss";
 
-const AnalogClock = ({ hours, minutes, seconds }) => {
+type analogClockPropType = {
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+const AnalogClock = ({ hours, minutes, seconds }: analogClockPropType) => {
   const secondsStyle = {
     transform: `rotate(${seconds * 6}deg)`,
   };

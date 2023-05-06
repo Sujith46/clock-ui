@@ -1,6 +1,12 @@
-import "./DigitalClock.css";
+import "./DigitalClock.scss";
 
-const DigitalClock = ({ hours, minutes, seconds }) => {
+type digitalClockPropType = {
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+const DigitalClock = ({ hours, minutes, seconds }: digitalClockPropType) => {
   return (
     <div className="digital-clock">
       <div className="d-hours">{hours}</div>
