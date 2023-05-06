@@ -6,7 +6,7 @@ import { useCurrentTime } from "./hooks/useCurrentTime";
 function App() {
   const [time] = useCurrentTime();
 
-  const {hours, minutes, seconds} = time;
+  const {hours, minutes, seconds} : any = time;
 
   return (
     <div className="clock">
@@ -19,9 +19,9 @@ function App() {
       </div>
       <div className="digital-clock-container">
         <DigitalClock
-          hours={time?.hours}
-          minutes={time?.minutes}
-          seconds={time?.seconds}
+          hours={hours}
+          minutes={minutes}
+          seconds={seconds}
         />
       </div>
     </div>

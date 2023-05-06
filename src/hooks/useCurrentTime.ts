@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 
+type currentTimeProptype = {
+  hours: number,
+  minutes: number,
+  seconds: number,
+}
+
 export const useCurrentTime = () => {
-  const [time, setTime] = useState({
+  const [time, setTime] = useState<currentTimeProptype>({
     hours: 0,
     minutes: 0,
     seconds: 0,
